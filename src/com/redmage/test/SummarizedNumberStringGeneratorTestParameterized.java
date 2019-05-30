@@ -23,7 +23,7 @@ public class SummarizedNumberStringGeneratorTestParameterized {
     }
 
     @ParameterizedTest(name = "Run {index}: inputString={0}, integerList={1}")
-    @MethodSource("couldTestInput_Parameters")
+    @MethodSource("collectTestInput_Parameters")
     void collectShouldReturnIntegerCollection(String inputString, Collection<Integer> integerList) {
         assumeTrue(inputString != null,
                 "The input string should NOT be null");
@@ -41,7 +41,7 @@ public class SummarizedNumberStringGeneratorTestParameterized {
         assertEquals(expectedString, numberStringGenerator.summarizeCollection(integerList));
     }
 
-    static Stream<Arguments> couldTestInput_Parameters() throws Throwable {
+    static Stream<Arguments> collectTestInput_Parameters() throws Throwable {
         return Stream.of(
                 Arguments.of("1,3,6,7,8,12,13,14,15,21,22,23,24,31",
                         Arrays.asList(1,3,6,7,8,12,13,14,15,21,22,23,24,31)),
