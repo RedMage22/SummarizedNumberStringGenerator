@@ -19,6 +19,7 @@ public class SummarizedNumberStringGenerator implements NumberRangeSummarizer {
     private Collection<Integer> buildIntegerCollection(Collection<String> strings) {
         return strings.stream()
                     .map(Integer::parseInt)
+                    .sorted()
                     .collect(Collectors.toList());
     }
 
