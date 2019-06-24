@@ -9,4 +9,4 @@ A console app that produces a string of numbers grouped into a range when they a
 * Using Java 8 features to write concise and readable code: Lambdas and Streams
 * JUnit 5 parameterized test
 * Using Git with IntelliJ
-* Using Gradle to import JUnit5
+* Using Gradle to import JUnit 5
