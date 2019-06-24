@@ -1,6 +1,3 @@
-package com.redmage.test;
-
-import com.redmage.main.SummarizedNumberStringGenerator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

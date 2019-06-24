@@ -1,5 +1,3 @@
-package com.redmage.main;
-
 import java.util.Collection;
 
 /**

@@ -1,5 +1,3 @@
-package com.redmage.main;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -44,6 +42,10 @@ public class SummarizedNumberStringGenerator implements NumberRangeSummarizer {
             }
         }
         return String.join(", ", stringList);
+
+//        return input.stream()
+//                .map(String::valueOf)
+//                .collect(Collectors.joining(", "));
     }
 
     private boolean isPartOfGroupedNumberString(List<Integer> integerList, int currentIndex, int numSteps) {
